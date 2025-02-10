@@ -1,0 +1,455 @@
+/* Back to Top Button */
+.back-to-top {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.back-to-top a {
+    display: inline-block;
+    background: #71C9CE;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gradient Background */
+body {
+    background: linear-gradient(to right, #E3FDFD, #A6E3E9, #71C9CE);
+    color: #333;
+    padding-top: 80px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+	 font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 20px;
+    color:  #003366;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color:  #A6E3E9;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+	margin-top:21px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 21px;
+    opacity: 0.9;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    max-width: 45%;
+    display: flex;
+    justify-content: flex-end; /* Move the image further to the right */
+    align-items: center;
+    padding-right: 50px;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Circular Background Behind Image */
+.circle-bg {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background:  #A6E3E9;
+    border-radius: 50%;
+    z-index: -1;
+    right: 1%; /* Moves it further right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circle-ba {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+   background:  #A6E3E9;
+    border-radius: 50%;
+    z-index: -1;
+    left: -10%; /* Moves it further right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*resume */
+
+.card-container {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.6); /* White with 80% transparency */
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    gap: 30px;
+}
+
+
+/* Profile Section */
+.profile-section {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.profile-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.career-title {
+    font-size: 18px;
+    color: #6AD0CD;
+    margin-bottom: 15px;
+}
+
+/* Download Button */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    background: #6AD0CD;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Resume Info Section */
+.resume-info {
+    width: 65%;
+}
+
+/* Resume Sections */
+.resume-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    font-size: 20px;
+    color: #6AD0CD;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #6AD0CD; /* Change color here */
+    padding-bottom: 5px;
+}
+
+/* Text Formatting */
+.resume-section ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.resume-section ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.resume-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #6AD0CD;
+    font-size: 18px;
+}
+
+/* Professional Vision & Mission */
+.vision-mission {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/*career*/
+
+
+/* Career Information Section */
+.career-info {
+    background: rgba(255, 255, 255, 0.0); /* Semi-transparent background */
+    border-radius: 10px;
+  text-align: center; /* Centers the heading */
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.career-info h2 {
+    font-size: 24px;
+    color: 63B4D1;
+ text-align: center; /* Centers the heading */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.career-section {
+ text-align: center; /* Centers the heading */
+    margin-bottom: 20px;
+}
+
+.career-section h3 {
+ text-align: center; /* Centers the heading */
+    font-size: 20px;
+    color: ;
+ text-align: center; /* Centers the heading */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6AD0CD;
+    padding-bottom: 5px;
+}
+
+.career-section ul {
+    list-style-type: disc;  /* Ensures bullets are shown */
+    margin-left: 20px;  /* Moves bullets closer to text */
+    padding-left: 0;  /* Removes extra spacing */
+    text-align: left;  /* Aligns text and bullets correctly */
+    display: inline-block; /* Keeps list elements together */
+}
+
+.career-section ul li {
+ text-align: center; /* Centers the heading */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* Circular Background Behind Image */
+.circle-bc {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+   background:  #A6E3E9;
+    border-radius: 50%;
+    z-index: -1;
+    right: 10%; /* Moves it further right */
+    top: 150%;
+    transform: translateY(-50%);
+}
+.circle-bd {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background:  #A6E3E9;
+    border-radius: 50%;
+    z-index: -1;
+    left: 20%; /* Moves it further right */
+    top: 120%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+/* Personality Page Sections */
+.personality-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    }
+
+/* Alternating Layouts */
+.personality-section.left {
+    flex-direction: row;
+}
+
+.personality-section.right {
+   /* Adjust the value to move it further */
+    flex-direction: row-reverse;
+}
+
+/* Text Styling */
+.text-content {
+    width: 50%;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #333;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* Media Content (Images & Videos) */
+.media-content {
+    width: 50%;
+    text-align: center;
+}
+
+.media-content img,
+.media-content video {
+    width: 90%;
+    border-radius: 10px;
+
+
+/* Personal Development Section */
+.pd-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background: rgba(173, 216, 230, 0.8); /* Light blue transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Text Content Styling */
+.text-content {
+    width: 55%;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.text-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.text-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-content ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.text-content ul li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+/* Image Positioning */
+.media-content {
+    width: 40%;
+    text-align: center;
+}
+
+.media-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
